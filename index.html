@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8" />
+<title>Mangekyou</title>
+<style>
+body{
+  background-image: url("https://srv4.imgonline.com.ua/result_img/imgonline-com-ua-Resize-1Iyn8KuYbpHapaQ.jpg"); /* Меняется фон экрана, выбирается здесь */
+}
+
+#wrapper{ /* Оболочка страницы сайта */
+  width: 900px; /* Меняется ширина страницы */
+  margin: 0 auto;
+  background:#F8EDDD; /* Меняется задний фон страницы */
+}
+/* Шапка сайта */
+
+#header{
+position:relative; /* Задаём блоку относительное позиционирование для того, чтобы затем размещать, в нём другие элементы и позиционировать относительно его границ поверх фоновой картинки и заголовка */
+  height: 250px; /* Высота шапки */
+  background-color: #ffffff; /* Фон шапки */
+   margin-bottom: 5px; /* Нижний отступ шапки от остального контента */
+  border-radius: 5px; /* Закругляются углы блока */
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; /* Тень. Визуально приподнимает блок над оболочкой */
+}
+img{ /* Фоновая картинка в шапке */
+float: left; /* Разрешаем наплывание других элементов на картинку */
+  margin: -40px 0 0 0;} /* Размещаем картинку в блоке header. 1-я и 3-я цифры - двигаем вверх-вниз, 2-я и 4-я цифры - двигаем вправо-влево */
+h1{ /* Заголовок сайта */
+  margin:0 0 10px 40px; /* Заголовок двигается верх-вправо-вниз-влево. */
+  color:#464451; /* Цвет заголовка */
+}
+.nomer{ /*Подзаголовок (номер телефона)*/
+  position:absolute; /* Позиционируем абсолютно подзаголовок, относительно границ блока header. Также можно разместить в шапке сайта ещё другие картинки и абзацы поверх фоновой картинки и заголовка */
+  top:5px; /* Двигается вверх-вниз */
+  left:680px; /* Двигается вправо-влево */
+  font-size: 25px; /* Размер букв подзаголовка */
+  font-style:italic; /* Курсив */
+  font-weight:bold; /* Жирный */
+  color:#464451; /* Цвет букв подзаголовка */
+}
+
+/* Сайдбар (колонка справа) */
+
+#sidebar{ /* Блок сайдбара */
+  background-color: #ffffff; /* Фон блока */
+  width: 180px; /* Ширина блока */
+  padding: 10px; /* Отступ текста от краёв */
+  float: right; /* Размещаем блок справа от других элементов, наплывание или обтекание справа). Если делать сайдбар слева, то значение right меняем на left */
+  border-radius: 5px; /* Закругляем углы блока */
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; /* Задаём блоку тень */
+}
+.marcer{ /* Галочки маркеры меню */
+  float: left; /* Размещаем слева от текста */
+  margin: 5px 5px 0 0; /* Двигаются вверх-вправо-вниз-влево */
+}
+
+/* Контент (статья) */
+
+#content{ /* Блок контента */
+  margin-bottom: 5px; /* Отступ блока статьи от блока подвала */
+  width: 676px; /* Ширина статьи */
+  padding: 10px; /* Отступ текста от краёв блока */
+  background: #ffffff; /* Фон статьи */
+  border-radius: 5px;
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px;
+}
+.left{ /* Картинка в тексте слева */
+  float: left;
+  margin: 30px 7px 7px 7px;
+}
+.right{ /* Картинка в тексте справа */
+  float: right;
+  margin: 7px 0 7px 7px;
+}
+/* Подвал */
+
+#footer{ /* Блок подвала */
+  height:80px; /* Высота блока подвала */
+  background-color: #ffffff; /* Фон блока подвала */
+  margin-bottom: 10px; /* Отступ снизу */
+  border-radius: 5px; /* Закруглённые углы */
+  box-shadow: rgba(0,0,0,0.5) 0px 1px 3px; /* Тень блока */
+}
+.clear{ /* Запрет наплывания. Устанавливается для того, чтобы блок контента, при заполнении текстом и изображениями не наплывал на подвал */
+  clear: both;
+}
+  .fon{ /* Номер телефона */
+  float:left; /* Разрешаем другим элементам обтекать абзац справа */
+  margin:20px 0 0 20px;
+}
+.fax{ /* Номер факса */
+  float:left;
+  margin:20px 0 0 60px;
+}
+.mail{ /* Адрес E-mail */
+  float:left;
+ margin:20px 0 0 60px;
+}
+</style>
+</head>
+<body>
+  <div id="wrapper"> <!--Оболочка страницы-->
+<!--Шапка сайта-->
+    <div id="header">
+<!--Заголовок сайта-->
+      <h1> </h1>
+<!--Описание (телефон)-->
+        <p class="nomer"> <br> </p>
+<!--Фоновая картинка в шапке сайта-->
+      <img src="https://sun9-25.userapi.com/iRJK67dC23RwOCkZIDpiQzwWzrYChkjgjz0XDw/k6PVJyMrzGw.jpg">
+    </div>
+<!--Сайдбар-->
+    <div id="sidebar">
+<!--меню-->
+      <h3>На нашем сайте</h3>
+<!--Картинки маркеров меню (галочки)-->
+        <p><img class="marcer" src="http://trueimages.ru/img/99/91/dea39f15.png" width="10" height="10">Здесь могла быть ваша реклама</p>
+        <p><img class="marcer" src="http://trueimages.ru/img/99/91/dea39f15.png" width="10" height="10">По вопросу размещения рекламы</p>
+        <p><img class="marcer" src="http://trueimages.ru/img/99/91/dea39f15.png" width="10" height="10"><a href="https://www.youtube.com/channel/UC5XfblY5zeoG33QhghkhPew?view_as=subscriber/">Mangekyou</a></p>
+<!--Прямая синяя линия-->
+<!--Общая информация в сайдбаре-->
+      <h3><a href="https://vk.com/mangekyou1362">sharingan</a></p></h3>
+      <img src="https://sun9-34.userapi.com/sKEHERjQoVsVx9DyZq9N0zk6TkxLoYd1r8Elbg/ZwubxCUjIb4.jpg">
+    </div>
+<!--Основной контент (статья)-->
+    <div id="content">
+<!--Картинка слева-->
+      <img class="left" src="https://sun9-60.userapi.com/WOnEhfNbXxJZq2V-sIHpYsvBGpzmvWeuFqkIGg/7bbOmhoX7_8.jpg">
+<!--Заголовок статьи-->
+        <h3>Биография элитного Шиноби</h3>
+<!--Текст статьи-->
+<p></p>
+<p>Ишмуратов Дилявер Сейдаметович. Студент 1ПКС19 Таврического колледжа КФУ им. Вернадского. 2005 года рождения. Я хочу стать 8 Хокаге </p>
+<p>Живёт в стране Огня в скрытой деревне Листвы - Коноха. Уже в 12 лет получил звание Чунина. В 14 лет стал членом Анбу. В настоящее время является Джонином, а так же имеет свой отряд из трех Генинов.</p>
+<p>После очередного нападения его бывшим учителем - Орочимару на деревню Коноха, погибает 3 Хокаге. Дилявер обещает отомстить и выдвигается на поиски логово Орочимару.
+   После обнаружения секретного логово Орочимару, попадает в схватку со своим бывшим учителем, где одерживает победу применив технику Чидори.
+   После битвы в деревне ему дали прозвище - Синяя Молния Конохи. </p>
+<!--Картинка справа-->
+      <iframe width="460" height="250" src="https://www.youtube.com/embed/VIZBD3c4PtE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+<!--Запрет наплывания-->
+  <div class="clear"></div>
+    </div>
+  </div>
+</body>
+</html>
